@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
-import axios from 'axios';
 import WeatherCard from '../components/WeatherCard';
 import SearchBar from '../components/SearchBar';
 import LocationList from '../components/LocationList';
@@ -81,7 +80,6 @@ export default function Home() {
       setLoading(false);
     }
   };
-
   return (
     <div className="min-h-screen  bg-gray-00">
       <div className="mx-auto">
@@ -95,7 +93,7 @@ export default function Home() {
             onSelect={handleLocationSelect} 
           />
         )}
-        
+
         {loading ? (
           <div className="text-center">
             <p>Loading weather data...</p>

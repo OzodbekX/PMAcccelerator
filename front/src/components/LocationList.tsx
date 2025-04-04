@@ -5,9 +5,10 @@ interface LocationListProps {
   
   const LocationList: React.FC<LocationListProps> = ({ locations, onSelect }) => {
     if (locations.length === 0) return null;
-  
-    return (
-      <ul className="mt-2 border border-gray-200 rounded-lg overflow-hidden">
+      console.log({locations})
+
+      return (
+      <ul className="mt-2 border border-gray-200 rounded-lg">
         {locations.map((location) => (
           <li 
             key={location.id}
