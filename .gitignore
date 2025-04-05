@@ -1,0 +1,42 @@
+# Global
+.DS_Store
+*.log
+*.pyc
+__pycache__/
+.env
+*.sqlite3
+
+# Node (frontend)
+front/node_modules/
+front/.next/
+front/.env
+front/.turbo/
+front/.eslintcache
+front/coverage/
+front/package-lock.json
+
+# Python (backend)
+backend/myenv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/env/
+backend/venv/
+backend/*.sqlite3
+
+# VSCode / JetBrains
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Misc
+*.swp
+*~
+*.bak
+*.tmp
+*.orig
